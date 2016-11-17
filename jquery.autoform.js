@@ -96,7 +96,7 @@
 				if (cookiedata !== undefined) {
 					Cookies.remove(settings.cookieprefix + settings.idAttr);
 				}
-				Cookies.set('azgrautoform_'+settings.idAttr, data, { expires: settings.expires });
+				Cookies.set(settings.cookieprefix+settings.idAttr, data, { expires: settings.expires });
 				return;
 				//e.preventDefault();
 			});
